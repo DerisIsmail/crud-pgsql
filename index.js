@@ -6,6 +6,10 @@ dotenv.config();
 
 const app = express();
 
+app.get("/", (req, res) => {
+  res.send("<h1>Halaman Masih kosong Bro Bro Ku...!!</h1>");
+});
+
 app.use(cors());
 app.use(express.json());
 app.use(ProductRoute);
